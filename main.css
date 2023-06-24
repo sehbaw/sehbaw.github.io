@@ -17,7 +17,7 @@ border-bottom:1px solid rgba(255,255,255,0.3)}
 .alignable,.pull-left,.pull-right{display:inline-block}
 .pull-left{float:left}
 .pull-right{float:right}
-.container{max-width:700px;margin:auto}
+.container{max-width:780px;margin:auto}
 .wrapper{min-height:100%}
 #ins-logo{margin:auto;display:block;max-height:100px;text-align:center}
 
@@ -43,7 +43,7 @@ border-bottom:1px solid rgba(255,255,255,0.3)}
         .content blockquote{border-left:5px solid #333333;margin:20px 0 20px 0;padding:2px 8px 2px 8px;font-style:italic}
         .content .profile-picture{height:85px;width:85px;position:relative;margin:-10px 0 0 15px;float:right;border-radius:50%}
         p .content .profile-picture{padding:0;margin:0}
-        @media (max-width: 480px){
+        @media (max-width: 480px){ #ogis480px
             .content .profile-picture img{margin-top:-5px}}
             .content img{text-align:center;width:100%}
             table{margin:15px 0;border-collapse:collapse;width:100%;padding:0}
@@ -64,7 +64,13 @@ border-bottom:1px solid rgba(255,255,255,0.3)}
         }
               
         /* Add some padding inside the card container */
-        .container {
+        .container1 {
            padding: 2px 16px;
+           display:flex;
+           justify-content: space-between;
+           height:200px;
+            /*width:300px; */
+            width: 100%;
+            margin: 0 1%;
             }
 
