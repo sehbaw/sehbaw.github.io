@@ -21,7 +21,7 @@ body {
 .column {
   float: left;
   width: 25%;
-  padding: 0 10px;
+  padding: 0 10px  10px;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -39,7 +39,10 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #fffff;
+  height: auto; /* play around with this number until you get the height you need */
+  width: auto;
+  max-width: 100%;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -113,14 +116,14 @@ body {
         </div>
 <div>
 <div>
-    <!--<div class="container1"> -->
+    <div class="container1"> 
       <div>
-      <div class="container content">
+      <!--<div class="container content"> --> 
         <div class="row"> 
           <div class="column">
             <div class="card">
              <!--<img src="cookwme.JPG" alt="Slide" style="width:30%" class = "center"> -->
-             <img src="cookwme.JPG" alt="Slide" style="width:30%">
+             <img src="imgs/cookwme.JPG" alt="Slide" style="width:30%">
              <h4><b>Cook With Me </b></h4>
              <p>Cook with Me is a designathon project I participated in. The collaboration of the local aging community and a startup platform, this designathon was created
             to allow technologists to either design or establish a technological solution for the case problem of how the older generation manuevers around their house. </p>
@@ -129,7 +132,22 @@ body {
 
           <div class="column"> 
             <div class="card">
-              <img src="dropin.JPG" alt="Figma Frames" style="width:30%" class="center">
+              <img src="imgs/dropin.JPG" alt="Figma Frames" style="width:30%" class="center">
+              <!--<spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
+                <h4><b></b></h4>
+                <p>With a group of three other individuals for an information organization project, we were created a solution for finding a study place on
+                  a campus. Focusing on metadata, and communicating the information cohesively, we created a accessible design with a simple color pattern and a common UI 
+                  to avoid information overload and to allow people's cognitive mechanisms to feel familiar. 
+                </p>
+            </div>
+          </div>
+
+
+
+
+          <div class="column"> 
+            <div class="card">
+              <img src="imgs/dropin.JPG" alt="Figma Frames" style="width:30%" class="center">
               <!--<spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
                 <h4><b>DropIn</b></h4>
                 <p>With a group of three other individuals for an information organization project, we were created a solution for finding a study place on
@@ -167,14 +185,17 @@ body {
         </div> 
         <img src="dropin.JPG" alt="Figma Frames" style="width:30%" class="center">
         <spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
-        
+         
     </div>
-        <footer>
-    </hr>
+    </div>
+  </body>
+ <!---    <footer>
       <p style="text-align: center">
       <a href="https://github.com/ankitsultana" style="color: black"><small>Page design by Ankit Sultana</small></a>
       </p>
-  </footer>
+  </footer>  --> 
+</body>
+</html>
 
 
 
