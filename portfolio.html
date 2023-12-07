@@ -20,8 +20,8 @@ body {
 /* Float four columns side by side */
 .column {
   float: left;
-  width: 25%;
-  padding: 0 10px  10px;
+  width: 30%;
+  padding: 0 10px 10px;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -45,14 +45,19 @@ body {
   max-width: 100%;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
+
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+  .gallery {
+                grid-template-columns: 1fr;
+            }
 }
+
+.gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
   
 </style>
     <meta charset="utf-8">
@@ -116,56 +121,99 @@ body {
         </div>
 <div>
 <div>
-    <div class="container1"> 
-      <div>
-      <!--<div class="container content"> --> 
-        <div class="row"> 
-          <div class="column">
-            <div class="card">
-             <!--<img src="cookwme.JPG" alt="Slide" style="width:30%" class = "center"> -->
-             <img src="imgs/cookwme.JPG" alt="Slide" style="width:30%">
-             <h4><b>Cook With Me </b></h4>
-             <p>Cook with Me is a designathon project I participated in. The collaboration of the local aging community and a startup platform, this designathon was created
-            to allow technologists to either design or establish a technological solution for the case problem of how the older generation manuevers around their house. </p>
-            </div>
-          </div>
+  <div>
+    <div>
+        <div class="gallery">
+                <div class="card">
+                 <!--<img src="cookwme.JPG" alt="Slide" style="width:30%" class = "center"> -->
+                 <img src="imgs/cookwme.JPG" alt="Slide" style="width:30%">
+                 <h4><b>Cook With Me </b></h4>
+                 <p>Cook with Me is a designathon project I participated in. The collaboration of the local aging community and a startup platform, this designathon was created
+                to allow technologists to either design or establish a technological solution for the case problem of how the older generation manuevers around their house. </p>
+           
+              </div>   
 
-          <div class="column"> 
-            <div class="card">
-              <img src="imgs/" alt="Orbiting Children" style="width:30%" class="center">
-              <!--<spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
-                <h4><b>Orbiting Children: Who Are They?</b></h4>
-                <p>Foster youth is full of diversity and intersectionality. Lets explore that with 
-                </p>
+              <div class="card">
+                <img src="imgs/transparency.JPG" alt="Slide" style="width:60%" class="center">
+                   <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                    <h4><b>LiveCoding 101: A workshop on exploring livecoding.</b></h4>
+                      </p>
+          
             </div>
-          </div>
+  
 
 
-          <div class="column"> 
-            <div class="card">
-              <img src="imgs/dropin.JPG" alt="Figma Frames" style="width:30%" class="center">
-              <!--<spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
-                <h4><b>DropIn</b></h4>
-                <p>With a group of three other individuals for an information organization project, we were created a solution for finding a study place on
-                  a campus. Focusing on metadata, and communicating the information cohesively, we created a accessible design with a simple color pattern and a common UI 
-                  to avoid information overload and to allow people's cognitive mechanisms to feel familiar. 
-                </p>
-            </div>
-          </div>   
+                <div class="card">
+                  <img src="imgs/transparency.JPG" alt="Slide" style="width:60%" class="center">
+                     <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                      <h4><b>An AI/ML Use-Case: Finding a Suitable Drug Trial Participant</b></h4>
+                     <p> Through a data analytics internship with the UMB Pharmaceutical Sciences Department.
+                        </p>
+            
+              </div>
     
-          <div class="column">
-            <div class="card">
-              <img src="imgs/transparency.JPG" alt="Slide" style="width:60%" class="center">
-                 <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
-                  <h4><b>Supporting Journalistic Transparency</b></h4>
-                 <p>With a group of three other individuals is a hackathon project I participated in with three other individuals. The process of the project began with using web scraping to obtain tools to code into three categories,<br> essentially 
-                   creating metadata for each tool. Once the tools were categorized, we were then able to use Nielsen's ten usability heuristics to determine the usability of each tool. 
+        
+                <div class="card">
+                  <img src="imgs/" alt="Orbiting Children" style="width:30%" class="center">
+                  <!--<spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
+                    <h4><b>Orbiting Children: Who Are They?</b></h4>
+                    <p>Foster youth is full of diversity and intersectionality. Lets explore that with Python and data provided by the Annie E Casey Foundation. 
                     </p>
-            </div>
-          </div>
-          </div>
-          </div>
-          </div>
+               
+              </div>
+
+                <div class="card">
+                  <img src="imgs/dropin.JPG" alt="Figma Frames" style="width:30%" class="center">
+                  <!--<spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
+                    <h4><b>DropIn</b></h4>
+                    <p>With a group of three other individuals for an information organization project, we were created a solution for finding a study place on
+                      a campus. Focusing on metadata, and communicating the information cohesively, we created a accessible design with a simple color pattern and a common UI 
+                      to avoid information overload and to allow people's cognitive mechanisms to feel familiar. 
+                    </p>
+                </div>
+                <div class="card">
+                  <img src="imgs/transparency.jpg" alt="Slide" style="width:60%" class="center">
+                     <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                      <h4><b>Let's Get Green</b></h4>
+                     <p>A hackathon project focused on brining awareness about green web hosting and it's importance. <b>I won in 1st place as a beginner!</b>
+                        </p>
+                
+              </div>
+                <div class="card">
+                  <img src="imgs/transparency.JPG" alt="Slide" style="width:60%" class="center">
+                     <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                      <h4><b>Supporting Journalistic Transparency</b></h4>
+                     <p>With a group of three other individuals is a hackathon project I participated in with three other individuals. The process of the project began with using web scraping to obtain tools to code into three categories,<br> essentially 
+                       creating metadata for each tool. Once the tools were categorized, we were then able to use Nielsen's ten usability heuristics to determine the usability of each tool. 
+                        </p>
+                </div>
+            
+          
+                <div class="card">
+                  <img src="imgs/transparency.JPG" alt="Slide" class="center">
+                     <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                      <h4><b>Training Atari Games w/Reinforcement Learning</b></h4>
+                     <p>With a group of three other individuals is a hackathon project I participated in with three other individuals. The process of the project began with using web scraping to obtain tools to code into three categories,<br> essentially 
+                       creating metadata for each tool. Once the tools were categorized, we were then able to use Nielsen's ten usability heuristics to determine the usability of each tool. 
+                        </p>
+          
+                        <img src="imgs/transparency.JPG" alt="Slide" class="center">
+                     <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                      <h4><b>Data Visualization</b></h4>
+                     <p>With a group of three other individuals is a hackathon project I participated in with three other individuals. The process of the project began with using web scraping to obtain tools to code into three categories,<br> essentially 
+                       creating metadata for each tool. Once the tools were categorized, we were then able to use Nielsen's ten usability heuristics to determine the usability of each tool. 
+                        </p>
+          
+              </div>
+
+
+
+
+
+<!-- closing of the container -->
+               <!-- container content-->
+              </div> 
+              <!-- </div> -->
 
          <!-- <div class="column">
             <div class="card">..</div>
@@ -182,7 +230,6 @@ body {
         <img src="dropin.JPG" alt="Figma Frames" style="width:30%" class="center">
         <spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
          
-    </div>
     </div>
   </body>
  <!---    <footer>

@@ -1,5 +1,5 @@
-title: Researcher
-url: "https://ankitsultana.com"
+title: Sehba's Portfolio
+url: "https://sehbaw.github.io"
 baseurl: "/swani"
 
 markdown: kramdown
@@ -17,8 +17,7 @@ sass:
 
 nav:
  - name: "About"
-   link: "/researcher/"
- - name: "Resume"
-   link: "resume.pdf"
+   link: "about.html"
+ - name: "Portfolio"
  - name: "Contact"
    link: "contact"
