@@ -6,9 +6,6 @@ is_contact: true
 * Email: [sehbaw@gmail.com](mailto:sehbaw@gmail.com)
 
 
----
-
----
 
 ## Social
 

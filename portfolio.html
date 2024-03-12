@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Sehba's Portfolio</title>
+    <script src="scripts/checkbox.js"></script>
 <style>
    .center {
           display: block;
@@ -39,7 +40,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  background-color: #fffff;
+  background-color: #FFFFFF;
   height: auto; /* play around with this number until you get the height you need */
   width: auto;
   max-width: 100%;
@@ -47,12 +48,12 @@ body {
 
 
 @media screen and (max-width: 600px) {
-  .gallery {
+  #gallery {
                 grid-template-columns: 1fr;
             }
 }
 
-.gallery {
+#gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
@@ -120,39 +121,43 @@ body {
             </ul>
         </div>
         <!--finding new hackathons-->
-        <div align="center">
-          <input type="checkbox" id="creative" name="creative" value="creative">
+
+  
+  
+
+      <div align="center">
+          <input type="checkbox" id="creative">
           <label for="creative"> creative </label><br>
-          <input type="checkbox" id="hackathons" name="hackathons" value="hackathons">
+        <input type="checkbox" id="hackathons">
           <label for="hackathons">hackathons</label><br>
-          <input type="checkbox" id="tech" name="tech" value="tech">
+         <input type="checkbox" id="tech">
           <label for="tech">tech</label><br>
-        </div>
+        </div> 
 <div>
 <div>
   <div>
     <div>
-        <div class="gallery">
-                <div class="card">
+        <div id="gallery">
+                  <div class="card type-hackathons type-tech">
                  <!--<img src="cookwme.JPG" alt="Slide" style="width:30%" class = "center"> -->
-                 <img src="imgs/cookwme.JPG" alt="Slide" style="width:30%">
+                 <img src="imgs/cookwme.JPG" alt="Slide" style="width:60%">
                  <h4><b>Cook With Me </b></h4>
                  <p>Cook with Me is a designathon project I participated in. The collaboration of the local aging community and a startup platform, this designathon was created
                 to allow technologists to either design or establish a technological solution for the case problem of how the older generation manuevers around their house. </p>
-           
+          
               </div>   
 
-              <div class="card">
-                <img src="imgs/transparency.JPG" alt="Slide" style="width:60%" class="center">
+              <div class="card type-creative">
+                <img src="imgs/flyerlivecode.png" alt="Slide" style="width:30%" class="center">
                    <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
-                    <h4><b>LiveCoding 101: A workshop on exploring livecoding.</b></h4>
+                    <h4><b>let's livecode: A workshop on exploring livecoding.</b></h4>
                       </p>
           
             </div>
   
 
 
-                <div class="card">
+                <div class="card type-tech">
                   <img src="imgs/transparency.JPG" alt="Slide" style="width:60%" class="center">
                      <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
                       <h4><b>An AI/ML Use-Case: Finding a Suitable Drug Trial Participant</b></h4>
@@ -160,7 +165,7 @@ body {
                         </p>
               </div>
         
-                <div class="card">
+                <div class="card type-tech">
                   <img src="imgs/" alt="Orbiting Children" style="width:30%" class="center">
                   <!--<spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
                     <h4><b>Orbiting Children: Who Are They?</b></h4>
@@ -168,7 +173,7 @@ body {
                     </p> 
               </div>
 
-                <div class="card">
+                <div class="card type-creative ">
                   <img src="imgs/dropin.JPG" alt="Figma Frames" style="width:30%" class="center">
                   <!--<spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
                     <h4><b>DropIn</b></h4>
@@ -177,7 +182,7 @@ body {
                       to avoid information overload and to allow people's cognitive mechanisms to feel familiar. 
                     </p>
                 </div>
-                <div class="card">
+                <div class="card type-hackathons type-hackathons">
                   <img src="imgs/transparency.jpg" alt="Slide" style="width:60%" class="center">
                      <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
                       <h4><b>Let's Get Green</b></h4>
@@ -185,7 +190,7 @@ body {
                         </p>
                 
               </div>
-                <div class="card">
+                <div class="card type-hackathons">
                   <img src="imgs/transparency.JPG" alt="Slide" style="width:60%" class="center">
                      <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
                       <h4><b>Supporting Journalistic Transparency</b></h4>
@@ -195,20 +200,17 @@ body {
                 </div>
             
           
-                <div class="card">
-                  <img src="imgs/transparency.JPG" alt="Slide" class="center">
+                <div class="card type-hackathons">
+                  <img src="imgs/atari.JPG" alt="Slide" class="center">
                      <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
                       <h4><b>Training Atari Games w/Reinforcement Learning</b></h4>
-                     <p>With a group of three other individuals is a hackathon project I participated in with three other individuals. The process of the project began with using web scraping to obtain tools to code into three categories,<br> essentially 
-                       creating metadata for each tool. Once the tools were categorized, we were then able to use Nielsen's ten usability heuristics to determine the usability of each tool. 
-                        </p>
+                     <p>Can games get better and better each time? Let's train some Atari games to find out!
                       </div>
-                <div class="card"
-                        <img src="imgs/transparency.JPG" alt="Slide" class="center">
+                <div class="card type-tech">
+                        <img src="imgs/atari.JPG" alt="Slide" class="center">
                      <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
-                      <h4><b>Data Visualization</b></h4>
-                     <p>With a group of three other individuals is a hackathon project I participated in with three other individuals. The process of the project began with using web scraping to obtain tools to code into three categories,<br> essentially 
-                       creating metadata for each tool. Once the tools were categorized, we were then able to use Nielsen's ten usability heuristics to determine the usability of each tool. 
+                      <h4><b>Data Visualization Practice</b></h4>
+                     <p>With a variety of datasets, I have been practicing d3.js, highcharts, seaborn and more! Check it out on my Github 
                         </p>
           
               </div>
@@ -238,13 +240,13 @@ body {
         <spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
          
     </div>
+  
   </body>
  <!---    <footer>
       <p style="text-align: center">
       <a href="https://github.com/ankitsultana" style="color: black"><small>Page design by Ankit Sultana</small></a>
       </p>
-  </footer>  --> 
-</body>
+  </footer>  -->
 </html>
 
 

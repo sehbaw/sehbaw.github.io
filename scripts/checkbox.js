@@ -1,30 +1,41 @@
-//reused code 
-let checkboxes = Array.from(document.querySelectorAll("input[type='checkbox']")); 
-let galleryGrid = document.getElementById("gallery-grid");  
-for (const checkbox of checkboxes){
-    galleryGrid.classList.add(checkbox.id);
-} 
-
+/*let checkboxes = Array.from(document.querySelectorAll("input[type='checkbox']")); 
+let galleryGrid = document.getElementById("gallery");  
 
 checkboxes.forEach((checkbox) => {
     checkbox.checked = false;
     checkbox.addEventListener("change", () => filterCards());
 }); 
 
-
 function filterCards() {
-    let checkboxes = Array.from(document.querySelectorAll("input[type='checkbox']"));
     let checked = Array.from(document.querySelectorAll("input[type='checkbox']:checked"));
-    if (checked.length === 0) {
-        for (const checkbox of checkboxes){
-            galleryGrid.classList.add(checkbox.id);
-        }
-    } else {
-        for (const checkbox of checkboxes){
-            checkbox.checked ?
-                galleryGrid.classList.add(checkbox.id) :
-                galleryGrid.classList.remove(checkbox.id);
-        }
 
-    } 
-} 
+    // Remove all classes from galleryGrid
+    galleryGrid.className = "";
+
+    // Add classes based on checked checkboxes
+    checked.forEach((checkbox) => {
+        galleryGrid.classList.add(checkbox.id);
+    });
+}*/ 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  
+  checkboxes.forEach(function (checkbox) {
+      checkbox.addEventListener("change", function () {
+          const selectedFilters = Array.from(checkboxes)
+              .filter((checkbox) => checkbox.checked)
+              .map((checkbox) => checkbox.id);
+          
+          console.log("Selected Filters:", selectedFilters);
+
+          const cards = document.querySelectorAll(".card");
+          cards.forEach(function (card) {
+              const cardClasses = card.className.split(" ");
+              console.log("Card Classes:", cardClasses);
+
+              card.style.display = selectedFilters.every((filter) => cardClasses.includes(`type-${filter}`)) ? "block" : "none";
+          });
+      });
+  });
+});
