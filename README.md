@@ -1,5 +1,6 @@
-* Need to clean up the portfolio page
-* Need to clean up the profile pic dimensions 
+~* Need to clean up the portfolio page~ 
+* Need to clean up the profile pic dimensions
+* add a favicon
 
 ### License
 
