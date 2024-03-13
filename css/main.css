@@ -116,7 +116,9 @@ input[type="checkbox"] {
 
 #gallery.creative .card.type-creative,
 #gallery.hackathons .card.type-hackathons,
-#gallery.tech .card.type-tech {
+#gallery.tech .card.type-tech, 
+#gallery.research .card.type-research
+{
   display: initial;
   margin-top: 60px;
   margin-bottom: -60px;
