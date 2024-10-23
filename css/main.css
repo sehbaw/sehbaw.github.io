@@ -121,7 +121,13 @@ input[type="checkbox"] {
 #gallery.creative .card.type-creative,
 #gallery.hackathons .card.type-hackathons,
 #gallery.tech .card.type-tech, 
-#gallery.research .card.type-research
+#gallery.research .card.type-research,
+#gallery.design .card.type-design,
+#gallery.front-end .card.type-front-end,
+#gallery.OSINT .card.type-OSINT,
+#gallery.cybersec .card.type-cybsersecurity,
+#gallery.data-journalism .card.type-data-journalism,
+#gallery.learning .card.type-learning
 {
   display: initial;
   margin-top: 60px;
