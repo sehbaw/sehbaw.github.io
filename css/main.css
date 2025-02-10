@@ -156,3 +156,7 @@ input[type="checkbox"] {
     overflow: hidden;
   }
   
+
+  .portfolio-filter{
+    position:flex;
+  }

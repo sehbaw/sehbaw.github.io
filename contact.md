@@ -12,3 +12,5 @@ is_contact: true
 1. [Linkedin](#)
 2. [Github](#)
 3. [Kaggle](#)
+4. [Codepen](#)
+5. [HuggingFace](#)
