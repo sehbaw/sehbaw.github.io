@@ -159,4 +159,5 @@ input[type="checkbox"] {
 
   .portfolio-filter{
     position:flex;
+    display:inline-block;
   }
