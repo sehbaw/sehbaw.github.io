@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        
-    </style>
-    <title>About Me</title>
+    <title>Sehba's Portfolio</title>
+    <script src="scripts/checkbox.js"></script>
+<style>
+   .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(109, 108, 108, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  height: auto; /* play around with this number until you get the height you need */
+  width: auto;
+  max-width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+  #gallery {
+                grid-template-columns: 1fr;
+            }
+}
+
+#gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+  
+</style>
+    <meta property="og:url" content="https://www.sehbaw.github.io/portfolio">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,27 +80,27 @@
     <!-- Facebook Open Graph -->
     <meta name="og:description" content="A jekyll based resume template">
     <meta name="og:title" content="Researcher">
-    <meta name="og:url" content="https://sehbaw.github.io/">
+    <meta name="og:url" content="https://sehbaw.github.io/swani/contact.html">
     <meta name="og:type" content="article">
     
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Researcher">
+    <meta name="twitter:title" content="Sehba">
     <meta name="twitter:description" content="A jekyll based resume template">
-    <meta name="twitter:url" content="https://sehbaw.github.io">
+    <meta name="twitter:url" content=""https://sehbaw.github.io/contact.html">
     
-    <!--<meta name="twitter:image" content="">-->
-</head>
+        <meta name="twitter:image" content="">
+        
 <body>
     <div class="wrapper">
         <div class="navbar container">
             
-            <a id="author-name" class="alignable pull-left" href="https://sehbaw.github.io">Sehba Wani</a>
+            <a id="author-name" class="alignable pull-left" href="https://sehbaw.github.io/">Sehba Wani</a>
             <ul id="navlist" class="alignable pull-right navbar-ul">
                 
                     
-                        <li class="alignable pull-left nav-list"><a href="https://sehbaw.github.io">About</a>
+                        <li class="alignable pull-left nav-list"><a href="https://sehbaw.github.io/">About</a>
                     
                     
                         /
@@ -59,52 +117,201 @@
                 
                     
                         <li class="alignable pull-left nav-list"><a href="contact.html">Contact</a>
-                                            <li class="alignable pull-left nav-list"><a href="contact.html"></a>
-
-                </li>
+                    
+                    
+                        </li>
                 
             </ul>
         </div>
-        <div style="clear:both"></div>
-        <hr>
-        
-            <div class="container content">
-        
-              <!--  <h2 id="about-me">About Me</h2> --> 
-
-<!--<p><img class="profile-picture" src="/imgs/facebookid.png"/></p>--> 
-
-
-
-<!--<p>Hi! I am a recent graduate of the University of Maryland, College Park where I studied Information Science (InfoSci). InfoSci is the 
-  at the intersecton of humanities and technology. With a focus on the socio-technical aspect of technology rather than just the 
-  technical aspect, I am was able to explore technology in various contexts. --> 
-  Hi! My name is Sehba (Seh-ba) Wani (Wa-ni) and I recently just finished up at the Library of Congress, in the Congressional Research Service working on
-  a text mining model that was foundational for the orgnanization moving forward with their AI initiative. In the past, I have worked in a variety of secctors, including 
-   <ul> 
-    <li> Healthcare </li>
-    <li> Research</li>
-    <li> Child Welfare</li>]
-    <li> Policy  </li>
-    <li> Consulting</li>
-   </ul>
-
-  Currently looking for new opportunities.   
-</p>
-
-  <h2>Current Works</h2>
-  (1) I have been teaching a lot! I was able to transform those teachings into a research paper that was accepted at <a  href="toplap.org/iclc2025"> ICLC 2025</a><br>
-  (2) Working on my data visualization portfolio and teaching myself new frameworks and technologies <br>
-  (3) Volunteering
-
-  Check out my work <a href="https://sehbaw.github.io/portfolio.html">here </a> and <a href="https://www.github.com/sehbaw"></a>"
+        <!--finding new hackathons-->
 
   
-</body>
-<footer>
-</hr>
-    <p style="text-align: center">
-    <a href="https://github.com/ankitsultana" style="color: black"><small>Page design by Ankit Sultana</small></a>
-    </p>
-</footer>
+  
+
+      <div align="center" class="portfolio-filter">
+          <input type="checkbox" id="creative">
+          <label for="creative"> creative </label><br>
+         <input type="checkbox" id="hackathons">
+          <label for="hackathons">hackathons</label><br>
+         <input type="checkbox" id="tech">
+          <label for="tech">tech</label><br>
+          <input type="checkbox" id="research">
+          <label for="research">research</label><br>
+          <input type="checkbox" id="learning">
+          <label for="learning">learning</label><br>
+          <input type="checkbox" id="frontend">
+          <label for="frontend">front-end</label><br>
+          <label for="design">learning</label><br>
+          <input type="checkbox" id="design">
+          <label for="frontend">front-end</label><br>
+        </div> 
+<div>
+<div>
+  <div>
+    <div>
+        <div id="gallery">
+                  <div class="card type-hackathons type-tech">
+                 <!--<img src="cookwme.JPG" alt="Slide" style="width:30%" class = "center"> -->
+                 <img src="imgs/cookwme.JPG" alt="Slide" style="width:60%">
+                 <h4><b>Cook With Me </b></h4>
+                 <p>Cook with Me is a designathon project I participated in. The collaboration of the local aging community and a startup platform, this designathon was created
+                to allow technologists to either design or establish a technological solution for the case problem of how the older generation manuevers around their house. </p>
+          
+              </div>   
+
+              <div class="card type-creative">
+                <img src="imgs/flyerlivecode.png" alt="Slide" style="width:30%" class="center">
+                   <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                    <h4><b>let's livecode: A workshop on exploring livecoding.</b></h4>
+                    <p>a workshop to ease people into programming concepts by making music and graphic art with code!</p>
+                      </p>
+          
+            </div>
+  
+
+
+                <div class="card type-tech">
+                  <img src="imgs/" alt="Slide" style="width:60%" class="center">
+                     <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                      <h4><b>An AI/ML Use-Case: Finding a Suitable Drug Trial Participant</b></h4>
+                     <p> Through a data analytics internship with the UMB Pharmaceutical Sciences Department.
+                        </p>
+              </div>
+        
+                <div class="card type-tech">
+                  <img src="imgs/oc.jpg" alt="Orbiting Children" style="width:30%" class="center">
+                  <!--<spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
+                    <h4><b>Orbiting Children: Who Are They?</b></h4>
+                    <p>Foster youth is full of diversity and intersectionality. Lets explore that with Python and data provided by the Annie E Casey Foundation. 
+                    </p> 
+              </div>
+
+                <div class="card type-creative ">
+                  <img src="imgs/dropin.JPG" alt="Figma Frames" style="width:30%" class="center">
+                  <!--<spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
+                    <h4><b>DropIn</b></h4>
+                    <p>With a group of three other individuals for an information organization project, we were created a solution for finding a study place on
+                      a campus. Focusing on metadata, and communicating the information cohesively, we created a accessible design with a simple color pattern and a common UI 
+                      to avoid information overload and to allow people's cognitive mechanisms to feel familiar. 
+                    </p>
+                </div>
+                <div class="card type-hackathons type-hackathons">
+                  <img src="imgs/letsgetgreen.JPG" alt="Slide" style="width:60%" class="center">
+                     <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                      <h4><b>Let's Get Green</b></h4>
+                     <p>A hackathon project focused on brining awareness about green web hosting and it's importance. <b>I won in 1st place as a beginner!</b>
+                        </p>
+                        </div>
+                        <div class="card type-research">
+                          <img src="imgs/casa.jpg" alt="Slide" style="width:60%" class="center">
+                                  <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                          <h4><b>CASA Research Internship</b></h4>
+                           <p>Through an internship via the Do Good Fellowship, I began my internship at the Coirt Appointed Special Advocates chapter near me, working on defining 
+                            information needs of foster youth, designing and distributing a survey amongst volunteers and working a dashboard app visualizing identities within foster youth.
+                           </p>  
+              </div>
+                <div class="card type-hackathons">
+                  <img src="imgs/transparency.JPG" alt="Slide" style="width:60%" class="center">
+                     <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                      <h4><b>Supporting Journalistic Transparency</b></h4>
+                     <p>With a group of three other individuals is a hackathon project I participated in with three other individuals. The process of the project began with using web scraping to obtain tools to code into three categories,<br> essentially 
+                       creating metadata for each tool. Once the tools were categorized, we were then able to use Nielsen's ten usability heuristics to determine the usability of each tool. 
+                        </p>
+                </div>
+            
+          
+                <div class="card type-hackathons">
+                  <img src="imgs/atari.JPG" alt="Slide" class="center">
+                     <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                      <h4><b>Training Atari Games w/Reinforcement Learning</b></h4>
+                     <p>Can games get better and better each time? Let's train some Atari games to find out!
+                      </div>
+                <div class="card type-tech">
+                        <img src="imgs/dataviz.JPG" alt="Slide" class="center">
+                     <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+                      <h4><b>Data Visualization Practice</b></h4>
+                     <p>With a variety of datasets, I have been practicing d3.js, highcharts, seaborn and more! Check it out on my Github 
+                        </p>
+          
+              </div>
+          <div class="card type-data viz type-learning">
+                <img src="imgs/digicmap.JPG" alt="Slide" class="center">
+             <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+              <h4><b>Digital Controversy Mapping</b></h4>
+               <p>During my time at the Library of Congress I compiled a list of resources to be used and have been working through 
+                </p>
+  
+      </div>
+      <div class="card type-data viz">
+        <img src="imgs/netflix_engagement.JPG" alt="Slide" class="center">
+     <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+      <h4><b>Netflix Engagement Dashboard</b></h4>
+       <p> Dashboard of Netflix Data from the past two decades.  </p>
+
+</div>
+
+<div class="card type-design">
+  <img src="imgs/idgi.JPG" alt="Slide" class="center">
+<!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+<h4><b>I Don't Get It</b></h4>
+ <p><a href="'https://www.figma.com/design/KEk5PTThuSZFqFREwDujoU/i-dont-get-it?node-id=0-1&t=bkCnpwBf3WGEOK9X-1">Link to Figma</a></p>
+  <p>a design for a web application for users to submit a work of art and then be uploaded to a gallery for others to comment on about how the art makes them feel and what they think. the point of this project is to design something specifically for art curation and to allow for anonymity in an age where we are constantly having to give our information. 
+  </p>
+</div>
+
+<div class="card type-design">
+  <img src="imgs/tellmemore.JPG" alt="Slide" class="center">
+<!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+<h4><b>Tell Me More</b></h4>
+<p><a href='https://www.figma.com/design/ReEEIzFB3tYFAkZq5KjN6t/tell-me-more?node-id=0-1&t=aPl1lVQk4iLk2vWW-1'>Link to Figma</a></p>
+ <p> - a design for a web application that helps people figure out if they should go to grad school, and what information is accessible already on the internet. This is inspired from my collecting of open source syllabi from potential grad school programs I am interested in. 
+  As well as, the feeling that everyone my age is going to graduate school except me.  </p>
+</div>
+
+<div class="card type-design">
+  <img src="imgs/theworldisbig.JPG" alt="Slide" class="center">
+<!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+<h4><b>The World is So Big</b></h4>
+<p><a href='https://www.figma.com/design/a0ybUIsxKCH3zTUkc6uJT9/The-World-is-So-Big?node-id=0-1&t=Yd4lHVm7ZYbRdBmr-1'> Link to Figma</a></p>
+ <p> A design for a current web application that uses MapboxJS to host a 3D globe that will allow users to upload information about world conflicts. This is inspired by the World Conflict Tracker by the Council of Foreign Relations. This project allows for individuals directly impacted by global conflicts to provide material and resources on the conflict - both scholarl and personal material. 
+</p>
+
+</div>
+
+
+
+
+<!-- closing of the container -->
+               <!-- container content-->
+              </div> 
+              <!-- </div> -->
+
+         <!-- <div class="column">
+            <div class="card">..</div>
+          </div> -->
+        
+
+        <!--<img src="cookwme.JPG" alt="Slide" style="width:30%" class = "center">
+       <span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span> 
+          <div class="container">
+            <h4><b>Cook With Me </b></h4>
+            Cook with Me is a designathon project I participated in. The collaboration of the local aging community and a startup platform, this designathon was created
+            to allow technologists to either design or establish a technological solution for the case problem of how the older generation manuevers around their house. </p>
+        </div> 
+        <img src="dropin.JPG" alt="Figma Frames" style="width:30%" class="center">
+        <spn class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>--> 
+         
+    </div>
+  
+  </body>
+
+      <p style="text-align: center">
+      <a href="https://github.com/ankitsultana" style="color: black"><small>Page design by Ankit Sultana</small></a>
+      </p>
+  </footer>
+</html>
+
+
+
+
 
