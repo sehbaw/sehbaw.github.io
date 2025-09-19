@@ -119,6 +119,7 @@ input[type="checkbox"] {
   }*/
 
 #gallery.creative .card.type-creative,
+#gallery.front-end .card.type-data-viz
 #gallery.hackathons .card.type-hackathons,
 #gallery.tech .card.type-tech, 
 #gallery.research .card.type-research,
