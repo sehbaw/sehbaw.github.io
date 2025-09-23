@@ -3,6 +3,7 @@
 <head>
     <title>Sehba's Portfolio</title>
     <script src="scripts/checkbox.js"></script>
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
 <style>
    .center {
           display: block;
@@ -141,6 +142,9 @@ body {
           <label for="design">design</label><br>
           <input type="checkbox" id="front-end">
           <label for="front-end">front-end</label><br>
+          <input type="checkbox" id="data">
+          <label for="data">data & dataviz</label><br>
+          
         </div> 
 <div>
 <div>
@@ -224,21 +228,20 @@ body {
                      <p>Can games get better and better each time? Let's train some Atari games to find out!
                       </div>
                 <div class="card type-tech">
-                        <img src="imgs/dataviz.JPG" alt="Slide" class="center">
+                        <img src="imgs/dataviz_practice.jpg" alt="Slide" class="center">
                      <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
                       <h4><b>Data Visualization Practice</b></h4>
                      <p>With a variety of datasets, I have been practicing d3.js, highcharts, seaborn and more! Check it out on my Github 
                         </p>
-          
               </div>
-          <div class="card type-data viz type-learning">
-                <img src="imgs/digicmap.JPG" alt="Slide" class="center">
-             <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+        <!--  <div class="card type-data viz type-learning">
+                <img src="imgs/" alt="Slide" class="center">
+             <span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>
               <h4><b>Digital Controversy Mapping</b></h4>
                <p>During my time at the Library of Congress I compiled a list of resources to be used and have been working through 
                 </p>
   
-      </div>
+      </div>-->
       <div class="card type-data viz">
         <img src="imgs/netflix_engagement.JPG" alt="Slide" class="center">
      <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
@@ -261,7 +264,7 @@ body {
 <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
 <h4><b>Tell Me More</b></h4>
 <p><a href='https://www.figma.com/design/ReEEIzFB3tYFAkZq5KjN6t/tell-me-more?node-id=0-1&t=aPl1lVQk4iLk2vWW-1'>Link to Figma</a></p>
- <p> - a design for a web application that helps people figure out if they should go to grad school, and what information is accessible already on the internet. This is inspired from my collecting of open source syllabi from potential grad school programs I am interested in. 
+ <p> A design for a web application that helps people figure out if they should go to grad school, and what information is accessible already on the internet. This is inspired from my collecting of open source syllabi from potential grad school programs I am interested in. 
   As well as, the feeling that everyone my age is going to graduate school except me.  </p>
 </div>
 
@@ -270,7 +273,7 @@ body {
 <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
 <h4><b>The World is So Big</b></h4>
 <p><a href='https://www.figma.com/design/a0ybUIsxKCH3zTUkc6uJT9/The-World-is-So-Big?node-id=0-1&t=Yd4lHVm7ZYbRdBmr-1'> Link to Figma</a></p>
- <p> A design for a current web application that uses MapboxJS to host a 3D globe that will allow users to upload information about world conflicts. This is inspired by the World Conflict Tracker by the Council of Foreign Relations. This project allows for individuals directly impacted by global conflicts to provide material and resources on the conflict - both scholarl and personal material. 
+ <p> A design for a web application that uses MapboxJS to host a 3D globe that will allow users to upload information about world conflicts. This is inspired by the World Conflict Tracker by the Council of Foreign Relations. This project allows for individuals directly impacted by global conflicts to provide material and resources on the conflict - both scholarly and personal material. 
 </p>
 </div>
 <div class="card type-front-end type-creative">
@@ -281,71 +284,103 @@ body {
  <p> An online archive for my teaching materials for various creative workshops that I hold in the DMV area</p>
 
 </div>
-<div class="card type-data">
-  <img src="imgs/" alt="Slide" class="center">
+<div class="card type-data type-data-viz">
+  <img src="imgs/artwashington.jpg" alt="Slide" class="center" style="width:200px; height: 100px;">
 <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
 <h4><b>Art of Washington State </b></h4>
 <p><a href='https://public.tableau.com/views/ArtofWashingtonStateAnalysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> Link to Dashboard </a></p>
- <p> An interactive dashboard surrounding art analytics in Washington state.</p>
+ <p> An interactive dashboard surrounding art analytics in Washington state. This is to aid inventory and explore what mediums are across the state in cultural heritage institutions. </p>
 </div>
 
 <div class="card type-creative type-front-end">
-  <img src="imgs/" alt="Slide" class="center">
+  <img src="imgs/creativep.jpg" alt="Slide" class="center">
 <h4><b> Creative Portfolio </b></h4>
 <p><a href=''> Link </a></p>
- <p> creative portfolio of more playful and interactive work <3 </p>
+ <p> creative portfolio of more playful and interactive work <3 <br>
+  Aiming to publish by the end of the September 2025 </p>
 </div>
 
 
 <div class="card type-data type-data-viz">
-  <img src="imgs/" alt="Slide" class="center">
+  <img src="imgs/somethingtooffer.jpg" alt="Slide" class="center">
 <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
 <h4><b> We All Have Something to Offer </b></h4>
-<p><a href='https://public.tableau.com/views/ArtofWashingtonStateAnalysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> Link to Data Viz </a></p>
+<p><a href='https://public.flourish.studio/visualisation/22469501/'> Link to Data Viz </a></p>
  <p> An interactive visualization showcasing the strengths of countries all across the globe.</p>
 </div>
 
 <div class="card type-data">
-  <img src="imgs/" alt="Slide" class="center">
+  <img src="imgs/cam.jpg" alt="Slide" class="center">
 <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
 <h4><b> Cultural Cartography: Comparative Analysis of Cultural Heritage in Major Cities</b></h4>
-<p><a href='https://public.tableau.com/views/ArtofWashingtonStateAnalysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> Link to Data Viz </a></p>
+<p><a href='https://public.flourish.studio/story/2443353/'> Link to Data Story </a></p>
  <p> A data story examining cultural heritage institutions across two major cities in the US.</p>
 </div>
+
 
 <div class="card type-data">
-  <img src="imgs/" alt="Slide" class="center">
+  <img src="imgs/datasetdiving.jpg" alt="Slide" class="center">
 <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
-<h4><b> Cultural Cartography: Comparative Analysis of Cultural Heritage in Major Cities</b></h4>
+<h4><b> Dataset Diving </b></h4>
+<p><a href='https://www.github.com/sehbaw/datasets'> Data Respository </a></p>
+ <p> Datasets that were scraped, and fetched from APIs. Compiling datasets is allowing me to engage and support data stories that interest me. Typically, the stories attempt to cover a gap that I find in news and publications.</p>
+</div>
+<!--<<div class="card type-creative">
+  <img src="imgs/" alt="Slide" class="center">-->
+<!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+<!--<h4><b> Touchdesigner Assets </b></h4>
 <p><a href='https://public.tableau.com/views/ArtofWashingtonStateAnalysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> Link to Data Viz </a></p>
  <p> A data story examining cultural heritage institutions across two major cities in the US.</p>
-</div>
+ I have been teaching myself (slowly, but surely) touchdesigner assets that I hope to share on my creative portfolio site soon!
+</div>-->
 
-<div class="card type-data">
-  <img src="imgs/" alt="Slide" class="center">
+
+<div class="card type-front-end">
+  <img src="imgs/htmlday.jpg" alt="Slide" class="center">
 <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
-<h4><b> Cultural Cartography: Comparative Analysis of Cultural Heritage in Major Cities</b></h4>
-<p><a href='https://public.tableau.com/views/ArtofWashingtonStateAnalysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> Link to Data Viz </a></p>
- <p> A data story examining cultural heritage institutions across two major cities in the US.</p>
+<h4><b>HTML Day 2025</b></h4>
+<<p><a href=''> Link to Page </a></p>
+ <p> A little HTML and sun. HTML Day is a international phenomenon dedicated to the beginnings and ulimate tool: HTML.<br>I gathered outside the Washington Monument with others to write HTML code in nature. 
+</p>
 </div>
 
-<div class="card type-data">
-  <img src="imgs/" alt="Slide" class="center">
+<div class="card type-front-end">
+  <img src="imgs/i3.jpg" alt="Slide" class="center" style="width: 300px; height:100px;">
 <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
-<h4><b> Cultural Cartography: Comparative Analysis of Cultural Heritage in Major Cities</b></h4>
-<p><a href='https://public.tableau.com/views/ArtofWashingtonStateAnalysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> Link to Data Viz </a></p>
- <p> A data story examining cultural heritage institutions across two major cities in the US.</p>
+<h4><b>i3 Scholar (Academic Research) </b></h4>
+ <p> The i3 fellowship is a year-long experience for undegraduates to gain experience in producing academic research regarding Human Computer Interaction (HCI). I published two papers under this fellowship.
+</p>
 </div>
-<div class="card type-creative">
-  <img src="imgs/" alt="Slide" class="center">
+
+<div class="card type-research">
+  <img src="imgs/i3.jpg" alt="Slide" class="center" style="width: 300px; height:100px;">
 <!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
-<h4><b> Touchdesigner Assets </b></h4>
-<p><a href='https://public.tableau.com/views/ArtofWashingtonStateAnalysis/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> Link to Data Viz </a></p>
- <p> A data story examining cultural heritage institutions across two major cities in the US.</p>
+<h4><b> Ray Bradbury Meetup </b></h4>
+ <p> A local meetup group internet corner. To allow this spreading of a local writing group, I wanted to make them a webpage so they could be 
+  a bit more searchable! Hopefully, they can spread and expand their group.
+</p>
+</div>
+<div class="card type-front-end">
+  <img src="imgs/fishbowl.png" alt="Slide" class="center" style="width: 200px; height:100px;">
+<!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+<h4><b> Fishbowl </b></h4>
+<p><a href="https://fishbowl-page.vercel.app/"> Link to Webpage</a></p>
+ <p> A lot of websites act as marketing materials as the web is the new goldrush. I have been exploring that be trying to find media I enjoy, to then use the web as my medium, spreading and creating visuals to introduce the media to the web. 
+  This is a short film I found that really resonated with me so I decided to make a webpage, adding in animations with jquery.  
+</p>
+</div>
+
+<div class="card type-front-end">
+  <img src="imgs/" alt="Slide" class="center" style="width: 300px; height:100px;">
+<!--<span class="class"><img src="cookwme.JPG" alt="Slide" style="width:30%"></span>-->
+<h4><b> AnyoneCanCode </b></h4>
+<p><a href="https://codesandbox.io/p/sandbox/anyonecancode-9ttvt6"> Link to Webpage</a></p>
+ <p> At the beginning of my teaching days, I wanted to create an accessible resource of all that I had compiled so far. With some HTML, CSS and jquery I was able to make a little web zine. <br>
+  Not super common but I enjoyed  
+</p>
 </div>
 
 </div>
-
 
 
 <!-- closing of the container -->
