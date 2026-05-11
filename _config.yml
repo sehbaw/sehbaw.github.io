@@ -21,3 +21,5 @@ nav:
  - name: "Portfolio"
  - name: "Contact"
    link: "contact"
+- name: "Blog"
+  link: "blog""
