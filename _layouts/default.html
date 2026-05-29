@@ -65,7 +65,11 @@
                     {% if x.name == "Resume" %}
                         <li class="alignable pull-left nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
                     {% else %}
-                        <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
+                        {% if x.link contains "://" %}
+                            <li class="alignable pull-left nav-list"><a href="{{ x.link }}">{{ x.name }}</a>
+                        {% else %}
+                            <li class="alignable pull-left nav-list"><a href="{{ x.link | relative_url }}">{{ x.name }}</a>
+                        {% endif %}
                     {% endif %}
                     {% if forloop.last == false %}
                         /
@@ -80,6 +84,8 @@
             <div class="container content contact">
         {% else %}
             <div class="container content">
+            <h1>{{ page.title }}</h1>
+
         {% endif %}
                 {{ content }}
                 {% if site.footer == true %}
