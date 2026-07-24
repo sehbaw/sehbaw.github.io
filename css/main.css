@@ -119,7 +119,7 @@ input[type="checkbox"] {
   }*/
 
 #gallery.creative .card.type-creative,
-#gallery.front-end .card.type-data-viz
+#gallery.front-end .card.type-data-viz,
 #gallery.hackathons .card.type-hackathons,
 #gallery.tech .card.type-tech, 
 #gallery.research .card.type-research,
@@ -159,7 +159,23 @@ input[type="checkbox"] {
   
 
   .portfolio-filter{
+    padding-top: 10px;
     justify-content: center;
     size:100px;
+    display:flex;
+    gap:10px;
 
   }
+
+  .column-work-play{
+   /* display:flex; */
+   float:left;
+    /*column-count: 1;*/
+    width:50%;
+  
+  }
+.row:after{
+  content: "";
+  display:table;
+  clear:both;
+}
